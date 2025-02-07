@@ -11,13 +11,13 @@
 ## Table of Contents:
 
 ## Technology Stack:
-->HTML, CSS, JAVASCRIPT
-→ React js
-→ Node js
-→ Mongodb
-→ Express
-→ Tailwind
-→ Cloudinary
+1.HTML, CSS, JAVASCRIPT
+2. React js
+3. Node js
+4. Mongodb
+5. Express
+6. Tailwind
+7.Cloudinary
   
 
 ## Contributors:
