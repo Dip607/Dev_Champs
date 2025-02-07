@@ -8,6 +8,7 @@ import logo from './logo.svg'
 import dropdown_icon from './dropdown_icon.svg'
 import menu_icon from './menu_icon.svg'
 import cross_icon from './cross_icon.png'
+import online_doctor_image from './appointment.jpg'
 import chats_icon from './chats_icon.svg'
 import verified_icon from './verified_icon.svg'
 import arrow_icon from './arrow_icon.svg'
@@ -27,6 +28,7 @@ import doc9 from './doc9.png'
 import doc10 from './doc10.png'
 import doc11 from './doc11.png'
 import doc12 from './doc12.png'
+import vid from './video.mp4'
 import doc13 from './doc13.png'
 import doc14 from './doc14.png'
 import doc15 from './doc15.png'
@@ -40,7 +42,9 @@ import Pediatricians from './Pediatricians.svg'
 
 export const assets = {
     appointment_img,
+    online_doctor_image,
     header_img,
+    vid,
     group_profiles,
     logo,
     chats_icon,

@@ -1,45 +1,92 @@
-import React from 'react'
-import { assets } from '../assets/assets'
+import React from "react";
+import { assets } from "../assets/assets";
 
 const About = () => {
   return (
-    <div>
-
-      <div className='text-center text-2xl pt-10 text-[#707070]'>
-        <p>ABOUT <span className='text-gray-700 font-semibold'>US</span></p>
+    <div className="bg-gray-50 min-h-screen px-6 md:px-16 py-12">
+      
+      {/* Section: About Us */}
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-gray-800">
+          About <span className="text-blue-600">Us</span>
+        </h1>
+        <p className="text-gray-600 mt-2 text-lg">
+          Learn more about our mission and vision.
+        </p>
       </div>
 
-      <div className='my-10 flex flex-col md:flex-row gap-12'>
-        <img className='w-full md:max-w-[360px]' src={assets.about_image} alt="" />
-        <div className='flex flex-col justify-center gap-6 md:w-2/4 text-sm text-gray-600'>
-          <p>Welcome to Prescripto, your trusted partner in managing your healthcare needs conveniently and efficiently. At Prescripto, we understand the challenges individuals face when it comes to scheduling doctor appointments and managing their health records.</p>
-          <p>Prescripto is committed to excellence in healthcare technology. We continuously strive to enhance our platform, integrating the latest advancements to improve user experience and deliver superior service. Whether you're booking your first appointment or managing ongoing care, Prescripto is here to support you every step of the way.</p>
-          <b className='text-gray-800'>Our Vision</b>
-          <p>Our vision at Prescripto is to create a seamless healthcare experience for every user. We aim to bridge the gap between patients and healthcare providers, making it easier for you to access the care you need, when you need it.</p>
+      <div className="mt-10 flex flex-col md:flex-row items-center gap-12">
+        <img
+          className="w-full md:w-1/3 rounded-lg shadow-lg"
+          src={assets.about_image}
+          alt="About Us"
+        />
+        <div className="md:w-2/3 flex flex-col gap-6 text-gray-700 text-lg leading-relaxed">
+          <p>
+            Welcome to{" "}
+            <span className="font-semibold text-blue-600">AppointEasy</span>, your
+            trusted partner in managing healthcare needs with convenience and
+            efficiency. We understand the challenges of scheduling doctor
+            appointments and managing health records.
+          </p>
+          <p>
+            Our platform seamlessly connects patients with trusted healthcare
+            providers, ensuring you get the best medical support whenever you
+            need it.
+          </p>
+          <div className="bg-blue-100 p-5 rounded-lg">
+            <h2 className="text-xl font-bold text-blue-700">Our Vision</h2>
+            <p>
+              To create a seamless healthcare experience by bridging the gap
+              between patients and healthcare providers. We aim to make
+              healthcare accessible, efficient, and stress-free.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className='text-xl my-4'>
-        <p>WHY  <span className='text-gray-700 font-semibold'>CHOOSE US</span></p>
+      {/* Section: Why Choose Us */}
+      <div className="text-center mt-20">
+        <h2 className="text-3xl font-bold text-gray-800">
+          Why <span className="text-blue-600">Choose Us</span>?
+        </h2>
+        <p className="text-gray-600 mt-2 text-lg">
+          We prioritize efficiency, convenience, and personalization.
+        </p>
       </div>
 
-      <div className='flex flex-col md:flex-row mb-20'>
-        <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
-          <b>EFFICIENCY:</b>
-          <p>Streamlined appointment scheduling that fits into your busy lifestyle.</p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        
+        {/* Feature Card */}
+        <div className="bg-white shadow-md p-8 rounded-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
+          <h3 className="text-xl font-bold text-gray-800">Efficiency</h3>
+          <p className="text-gray-600 mt-2">
+            Streamlined appointment scheduling that fits into your busy
+            lifestyle.
+          </p>
         </div>
-        <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
-          <b>CONVENIENCE: </b>
-          <p>Access to a network of trusted healthcare professionals in your area.</p>
+
+        {/* Feature Card */}
+        <div className="bg-white shadow-md p-8 rounded-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
+          <h3 className="text-xl font-bold text-gray-800">Convenience</h3>
+          <p className="text-gray-600 mt-2">
+            Access a network of trusted healthcare professionals in your area.
+          </p>
         </div>
-        <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
-          <b>PERSONALIZATION:</b>
-          <p >Tailored recommendations and reminders to help you stay on top of your health.</p>
+
+        {/* Feature Card */}
+        <div className="bg-white shadow-md p-8 rounded-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
+          <h3 className="text-xl font-bold text-gray-800">Personalization</h3>
+          <p className="text-gray-600 mt-2">
+            Tailored recommendations and reminders to help you stay on top of
+            your health.
+          </p>
         </div>
+
       </div>
 
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

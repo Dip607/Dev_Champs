@@ -8,7 +8,14 @@ const Footer = () => {
 
         {/* Logo & Description */}
         <div>
-          <img className='mb-5 w-40' src={assets.logo} alt="Logo" />
+        <h1 className="text-2xl font-extrabold text-gray-900">
+          <span className="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text drop-shadow-lg">
+            APPOINT
+          </span>
+          <span className="bg-gradient-to-r from-green-400 to-yellow-500 text-transparent bg-clip-text drop-shadow-lg">
+            EASY
+          </span>
+        </h1>
           <p className='w-full md:w-2/3 text-gray-400 leading-6'>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
           </p>
