@@ -1,10 +1,10 @@
 import jwt from "jsonwebtoken";
-import appointmentModel from "../../../models/appointmentModel.js";
-import doctorModel from "../../../models/doctorModel.js";
+import appointmentModel from "../models/appointmentModel.js";
+import doctorModel from "../models/doctorModel.js";
 import bcrypt from "bcrypt";
 import validator from "validator";
 import { v2 as cloudinary } from "cloudinary";
-import userModel from "../../../models/userModel.js";
+import userModel from "../models/userModel.js";
 
 // API for admin login
 const loginAdmin = async (req, res) => {
